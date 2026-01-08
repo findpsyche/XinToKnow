@@ -1,12 +1,66 @@
-# AI芯片应用开发岗位准备方案
+# AI-Chip-Developer-Bootcamp (芯火计划)
 
 
 
+**第一步**: 阅读 [00_技能图谱总览.md](./00_技能图谱总览.md)  
+**第二步**: 根据自己的基础选择学习路径  
+**第三步**: 动手实践 + 构建项目
 
-## 📚 文档结构
+---
 
-本方案包含5个核心文档：
+### 📘 核心技能深度文档 (NEW!)
 
+#### [00_技能图谱总览](./00_技能图谱总览.md) ⭐ START HERE
+**全局导航** - 快速了解整个技能体系
+- T字型技能结构
+- 学习优先级矩阵
+- 16周时间线
+- 自检清单
+
+#### [06_岗位核心技能深度图谱](./06_岗位核心技能深度图谱.md) ⭐⭐⭐⭐⭐
+**AI模型与部署** (~25页 | 80+ 代码示例)
+- ✅ Transformer架构深度解析 (Attention, KV Cache)
+- ✅ 模型量化技术实战 (bitsandbytes, GPTQ, AWQ)
+- ✅ ONNX格式转换与优化
+- ✅ 性能指标测量 (TPS, TTFT, Throughput)
+
+**亮点**：
+- 每个概念都有代码实现
+- KV Cache原理深度解析
+- 量化技术对比实验
+- 性能测试完整脚本
+
+#### [07_系统工具链与底层技能](./07_系统工具链与底层技能.md) ⭐⭐⭐⭐⭐
+**Linux/Docker/C++** (~23页 | 实用命令合集)
+- ✅ Linux系统管理与Shell脚本
+- ✅ Docker容器化完全指南
+- ✅ C++基础阅读能力
+- ✅ CMake与pybind11
+
+**亮点**：
+- 常用命令速查表
+- Dockerfile最佳实践
+- SDK集成实战案例
+- 自动化部署脚本模板
+
+#### [08_应用开发与软技能](./08_应用开发与软技能.md) ⭐⭐⭐⭐⭐
+**FastAPI/飞书/RAG** (~33页 | 完整项目代码)
+- ✅ FastAPI异步后端开发
+- ✅ 飞书开放平台完全指南
+- ✅ RAG检索增强生成实战
+- ✅ 技术文档撰写模板
+
+**亮点**：
+- 完整的推理服务代码
+- 飞书Bot从零实现
+- RAG系统架构设计
+- API文档/测试报告模板
+
+---
+
+### 📖 基础学习路径文档
+
+#### 1️⃣ [岗位技能培训路径](./01_岗位技能培训路径.md)
 **内容**：
 - 16周系统化学习计划
 - 顶级大学课程推荐（Stanford, MIT, Berkeley等）
@@ -16,24 +70,14 @@
 - 飞书开放平台开发
 
 **学习路径**：
-```infographic
-infographic sequence-timeline-simple
-data
-  title 16周学习时间线
-  items
-    - label 第1-4周
-      desc 基础强化：Python/C++/PyTorch
-    - label 第5-8周
-      desc 硬件优化：GPU/芯片架构
-    - label 第9-12周
-      desc 大模型技术：Transformer/部署
-    - label 第13-16周
-      desc 应用开发：飞书/实战项目
-```
+- Week 1-4: 基础强化（Python/C++/PyTorch）
+- Week 5-8: 硬件优化（GPU/芯片架构）
+- Week 9-12: 大模型技术（Transformer/部署）
+- Week 13-16: 应用开发（飞书/实战项目）
 
 ---
 
-### 2️⃣ [顶级论文与研究资源](./02_顶级论文与研究资源.md)
+#### 2️⃣ [顶级论文与研究资源](./02_顶级论文与研究资源.md)
 **内容**：
 - 🏛️ **顶级研究实验室**
   - Stanford DAWN Lab, HAI
@@ -52,17 +96,9 @@ data
   - arXiv, Google Scholar, Papers with Code
   - 顶会：NeurIPS, ICML, MLSys, OSDI
 
-**推荐阅读优先级**：
-| 论文 | 重要性 | 领域 |
-|------|--------|------|
-| Flash Attention 1&2 | ⭐⭐⭐⭐⭐ | 推理优化 |
-| vLLM (PagedAttention) | ⭐⭐⭐⭐⭐ | 推理系统 |
-| GPTQ/AWQ | ⭐⭐⭐⭐⭐ | 模型量化 |
-| Google TPU论文 | ⭐⭐⭐⭐⭐ | 芯片架构 |
-
 ---
 
-### 3️⃣ [Kaggle竞赛与实践项目](./03_Kaggle竞赛与实践项目.md)
+#### 3️⃣ [Kaggle竞赛与实践项目](./03_Kaggle竞赛与实践项目.md)
 **内容**：
 - 🏆 **相关Kaggle竞赛**
   - LLM应用竞赛
@@ -75,43 +111,22 @@ data
   3. 飞书AI机器人（第14周）
   4. Agent Sandbox原型（第16周）
 
-- 📊 **数据集资源**
-  - Hugging Face Datasets
-  - CLUE中文基准
-  - Papers with Code
-
-**16周实践计划**：
-| 周次 | Kaggle活动 | 实践项目 | 产出 |
-|------|-----------|---------|------|
-| 1-4 | 学习Notebooks | 基础PyTorch | GitHub repo |
-| 5-8 | 参加CV/NLP竞赛 | 模型优化 | 性能报告 |
-| 9-12 | LLM竞赛 | 大模型部署 | Demo视频 |
-| 13-16 | 发布Notebook | 飞书AI机器人 | 完整应用 |
-
 ---
 
-### 4️⃣ [AI Agent Sandbox架构方案](./04_AI_Agent_Sandbox架构方案.md)
+#### 4️⃣ [AI Agent Sandbox架构方案](./04_AI_Agent_Sandbox架构方案.md)
 **核心创新**：多芯片适配的强化学习环境
 
 **可行性评估**：✅ **高度可行**
 
 **系统架构**：
 ```
-┌─────────────────┐
-│   Agent层       │ (RL Agents: PPO, DQN, SAC)
-└────────┬────────┘
-         │
-┌────────▼────────┐
-│  Sandbox核心层  │ (环境接口、奖励函数)
-└────────┬────────┘
-         │
-┌────────▼────────┐
-│ 硬件抽象层(HAL) │ (NVIDIA/AMD/自研芯片适配器)
-└────────┬────────┘
-         │
-┌────────▼────────┐
-│    芯片层       │ (GPU/TPU/专用AI芯片)
-└─────────────────┘
+Agent层 (RL Agents: PPO, DQN, SAC)
+         ↓
+Sandbox核心层 (环境接口、奖励函数)
+         ↓
+硬件抽象层 (NVIDIA/AMD/自研芯片适配器)
+         ↓
+芯片层 (GPU/TPU/专用AI芯片)
 ```
 
 **核心功能**：
@@ -120,103 +135,51 @@ data
 - 硬件性能监控
 - 自适应超参数调整
 
-**技术栈**：
-- RL框架：Stable-Baselines3
-- 深度学习：PyTorch 2.0+
-- 硬件监控：pynvml
-- 配置管理：Hydra
-
-**开发路线**：
-1. 基础框架（Gym兼容）
-2. 单芯片适配（NVIDIA）
-3. Agent集成（PPO/DQN）
-4. 多芯片支持
-5. 自适应优化
-6. 评估系统
-
 ---
 
-### 5️⃣ [Demo开发与实验指南](./05_Demo开发与实验指南.md)
+#### 5️⃣ [Demo开发与实验指南](./05_Demo开发与实验指南.md)
 **三大Demo方向**：
 
-#### Demo 1: 大模型部署优化 ⭐⭐⭐⭐⭐
-**项目**：ChatGLM-6B量化部署
-
-**优化技术**：
+**Demo 1: 大模型部署优化** ⭐⭐⭐⭐⭐
 - INT8量化（节省46%显存）
 - vLLM推理加速（3x吞吐量提升）
-- Flash Attention优化
-
-**成果**：
 - 性能对比报告
-- API服务部署
-- 压力测试结果
 
-**展示方式**：
-- Jupyter Notebook交互式
-- Gradio Web界面
-- 演示视频
-
----
-
-#### Demo 2: 飞书AI智能助手 ⭐⭐⭐⭐⭐
-**项目**：飞书知识库问答机器人
-
-**核心功能**：
+**Demo 2: 飞书AI智能助手** ⭐⭐⭐⭐⭐
 - 飞书消息接收/发送
 - RAG知识库检索
 - 对话历史管理
-- 本地LLM推理
 
-**技术实现**：
-- 飞书开放平台SDK
-- LangChain RAG
-- FAISS向量数据库
-- FastAPI服务
-
-**部署**：
-- Docker容器化
-- 内网穿透测试
-- 云服务器部署
-
----
-
-#### Demo 3: Agent Sandbox原型 ⭐⭐⭐⭐
-**项目**：硬件感知的RL环境（MVP）
-
-**功能**：
-- CartPole环境训练
+**Demo 3: Agent Sandbox原型** ⭐⭐⭐⭐
+- 硬件感知的RL环境
 - GPU利用率监控
-- TensorBoard可视化
-- 芯片性能画像
-
-**技术亮点**：
-- 硬件感知奖励函数
-- 自适应batch size
-- 多芯片对比Dashboard
+- 芯片性能对比
 
 ---
 
-## 🎯 整体学习规划
+## 🎯 学习优先级
 
-### 时间分配建议
+```
+第一优先级（生存技能）:
+✅ Python + Linux + 模型部署基础
+→ 保证你能把模型跑起来
 
-```infographic
-infographic chart-pie-plain-text
-data
-  title 16周时间分配
-  items
-    - label 理论学习
-      value 30
-    - label 实践项目
-      value 40
-    - label 论文阅读
-      value 15
-    - label Demo开发
-      value 15
+第二优先级（业务技能）:
+✅ 飞书开发 + RAG技术
+→ 保证你能做出业务应用
+
+第三优先级（进阶技能）:
+✅ Docker + 量化技术 + C++
+→ 保证你能处理复杂环境
+
+第四优先级（加分项）:
+✅ Agent Sandbox + 论文阅读
+→ 展示创新思维
 ```
 
-### 16周详细规划
+---
+
+## 📅 16周学习路线
 
 | 阶段 | 周次 | 学习重点 | 实践项目 | 里程碑 |
 |------|------|---------|---------|--------|
@@ -232,29 +195,24 @@ data
 ### 技术能力目标
 
 - [ ] **编程语言**
-  - [ ] Python高级特性（装饰器、异步、性能优化）
-  - [ ] C++现代特性（RAII、模板、智能指针）
-  - [ ] CUDA基础（简单kernel编写）
+  - [ ] Python高级特性
+  - [ ] C++基础阅读
+  - [ ] CUDA kernel编写
 
 - [ ] **深度学习框架**
   - [ ] PyTorch熟练使用
   - [ ] 自定义算子开发
-  - [ ] 模型导出（ONNX/TorchScript）
+  - [ ] 模型导出（ONNX）
 
 - [ ] **大模型技术**
   - [ ] Transformer架构理解
-  - [ ] 至少部署过1个大模型
-  - [ ] 掌握1种量化技术
-
-- [ ] **芯片与优化**
-  - [ ] 理解GPU架构
-  - [ ] 能进行性能分析（profiling）
-  - [ ] 了解AI芯片生态
+  - [ ] 部署过1个大模型
+  - [ ] 掌握量化技术
 
 - [ ] **应用开发**
   - [ ] FastAPI服务开发
   - [ ] 飞书开放平台集成
-  - [ ] Docker部署经验
+  - [ ] RAG系统构建
 
 ---
 
@@ -275,130 +233,116 @@ data
   - [ ] 部署在线Demo（至少1个）
   - [ ] 准备面试PPT
 
-- [ ] **学术积累**
-  - [ ] 阅读20+篇核心论文
-  - [ ] 撰写技术博客（3-5篇）
-  - [ ] 参与开源项目贡献
+---
+
+## 🚀 立即开始
+
+### Day 1: 环境准备
+
+```bash
+# 1. 安装Conda
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+bash Miniconda3-latest-Linux-x86_64.sh
+
+# 2. 创建环境
+conda create -n chip-dev python=3.10
+conda activate chip-dev
+
+# 3. 安装PyTorch
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+
+# 4. 安装基础库
+pip install transformers accelerate bitsandbytes fastapi uvicorn
+```
+
+### Week 1: 第一个模型
+
+```python
+# hello_llm.py
+from transformers import AutoModel, AutoTokenizer
+
+model_name = "THUDM/chatglm3-6b"
+tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
+model = AutoModel.from_pretrained(model_name, trust_remote_code=True).cuda()
+
+response, history = model.chat(tokenizer, "你好", history=[])
+print(response)
+```
 
 ---
 
-## 🚀 立即开始行动
+## 📊 项目亮点
 
-### 第1周行动清单
+### 全面性
+- ✅ 涵盖AI芯片开发全流程
+- ✅ 从底层硬件到上层应用
+- ✅ 理论与实践完美结合
 
-**Day 1-2: 环境准备**
-- [ ] 安装Python 3.10+
-- [ ] 配置CUDA环境（如有GPU）
-- [ ] 安装PyTorch 2.0+
-- [ ] 创建GitHub账号并配置SSH
-- [ ] 注册Hugging Face账号
+### 实用性
+- ✅ 80+ 可运行代码示例
+- ✅ 3个完整Demo项目
+- ✅ 真实岗位需求对齐
 
-**Day 3-4: 基础学习**
-- [ ] 开始MIT 6.0001课程
-- [ ] 复习Python高级特性
-- [ ] 阅读PyTorch官方教程
-
-**Day 5-7: 第一个项目**
-- [ ] 实现简单的PyTorch模型（MNIST）
-- [ ] 上传到GitHub
-- [ ] 撰写README文档
+### 创新性
+- ✅ AI Agent Sandbox架构
+- ✅ 芯片感知的训练策略
+- ✅ 多芯片适配方案
 
 ---
 
-### 常见问题解答
+## 🎓 最终成果
 
-**Q1: 没有GPU怎么办？**
-- 使用Google Colab（免费GPU）
-- 申请Kaggle Notebooks（30h/week GPU）
-- 云平台试用（阿里云、腾讯云）
+**16周后你将具备**：
 
-**Q2: 如何获取曦望sunrise的芯片SDK？**
-- 入职后通过公司渠道
-- 面试阶段可先用NVIDIA GPU模拟
-- 重点展示硬件抽象设计能力
+✅ **理论知识**
+- Transformer架构深度理解
+- 量化、推理优化原理
+- RAG系统设计
 
-**Q3: 飞书开发需要企业账号吗？**
-- 个人可注册开发者账号
-- 创建个人测试应用
-- 使用飞书个人版测试
+✅ **实践技能**
+- 模型部署与优化
+- 后端API开发
+- 飞书应用集成
+- 向量检索系统
 
-**Q4: 16周时间太紧张？**
-- 方案可灵活调整
-- 核心是Demo 1和Demo 2
-- Agent Sandbox可作为加分项
+✅ **项目作品**
+- 大模型部署优化 (性能报告)
+- 飞书AI机器人 (可演示)
+- Agent Sandbox原型 (创新项目)
 
+✅ **软实力**
+- 技术文档撰写
+- 问题排查能力
+- 系统设计思维
 
+---
+
+## 📞 资源与支持
 
 ### 学习社群
+- **Reddit**: r/MachineLearning
+- **Discord**: PyTorch Official
+- **知乎**: AI芯片话题
 
-- **Reddit**: r/MachineLearning, r/deeplearning
-- **Discord**: PyTorch Official, CUDA Programming
-- **微信群**: 搜索"AI芯片开发交流"
-- **知乎**: 关注AI芯片话题
+### 技术博客
+- Hugging Face Blog
+- NVIDIA Developer Blog
+- Lil'Log (OpenAI)
 
-### 技术博客推荐
+### 开源项目
+- vLLM
+- Flash Attention
+- Stable-Baselines3
 
-- **Hugging Face Blog**: https://huggingface.co/blog
-- **NVIDIA Developer Blog**: https://developer.nvidia.com/blog
-- **Lil'Log**: https://lilianweng.github.io/
-- **机器之心**: https://www.jiqizhixin.com/
+---
 
-### 开源项目参考
+## 🌟 致谢
 
-- **vLLM**: https://github.com/vllm-project/vllm
-- **Flash Attention**: https://github.com/Dao-AILab/flash-attention
-- **Stable-Baselines3**: https://github.com/DLR-RM/stable-baselines3
-
-
-### 使用本方案建议
-
-1. **打印检查清单**：每周review进度
-2. **记录学习日志**：使用Notion/Obsidian
-3. **定期自我测试**：每月总结
-4. **寻求反馈**：加入学习社群
-5. **调整计划**：根据实际情况灵活调整
-
-### 每周复盘模板
-
-```markdown
-## 第X周复盘 (日期)
-
-### 本周完成
-- [ ] 学习任务1
-- [ ] 学习任务2
-- [ ] 项目进展
-
-### 遇到的问题
-- 问题1：描述
-  - 解决方案：...
-
-### 下周计划
-- [ ] 任务1
-- [ ] 任务2
-
-
-## 🎯 最终目标
-
-**3个月后，你将具备**：
-
-```infographic
-infographic list-grid-badge-card
-data
-  title 3个月后的你
-  items
-    - label 技术能力
-      desc 大模型部署、芯片优化、应用开发
-      icon mdi:chart-line
-    - label 项目作品
-      desc 3个完整Demo、GitHub活跃
-      icon mdi:briefcase
-    - label 岗位匹配
-      desc 完全符合曦望sunrise要求
-      icon mdi:target
-    - label 竞争优势
-      desc 创新项目、性能优化经验
-      icon mdi:trophy
-```
+本项目整合了以下资源：
+- 顶级大学公开课程（Stanford, MIT, Berkeley等）
+- 开源社区优秀项目
+- 学术界最新研究成果
+- 业界最佳实践经验
 
 ---
 
@@ -406,9 +350,9 @@ data
 
 **版本信息**：
 - 当前版本：v1.0
-- 创建日期：2026-01-07
-- 最后更新：2026-01-07
-- 维护者：AI Assistant (Alma)
+- 创建日期：2026-01-08
+- 最后更新：2026-01-08
+- 维护者：AI Assistant (Alma) + findpsyche
 
 **更新计划**：
 - 每月更新论文清单
@@ -417,12 +361,24 @@ data
 
 ---
 
-## 🙏 致谢
+## 📧 使用说明
 
-本方案整合了以下资源：
-- 顶级大学公开课程（Stanford, MIT, Berkeley等）
-- 开源社区优秀项目
-- 学术界最新研究成果
-- 业界最佳实践经验
+1. **克隆项目**
+   ```bash
+   git clone https://github.com/findpsyche/XinToKnow
 
+   ```
+
+2. **开始学习**
+   - 阅读 `00_技能图谱总览.md`
+   - 根据基础选择文档
+   - 动手实践每个代码示例
+
+3. **构建项目**
+   - 跟随 `05_Demo开发与实验指南.md`
+   - 完成3个核心Demo
+   - 撰写技术文档
 ---
+**License**: MIT  
+**Author**: AI Assistant (Alma)  
+**Contact**: [GitHub Issues](https://github.com/findpsyche/XinToKnow/issues)
